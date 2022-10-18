@@ -3,7 +3,6 @@ import {
     ShoppingOutlined,
     SettingOutlined,
     ShoppingCartOutlined,
-    FileTextOutlined,
     MailOutlined,
     MobileOutlined,
     PictureOutlined,

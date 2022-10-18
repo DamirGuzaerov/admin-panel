@@ -10,4 +10,12 @@ userService.getUserList = function (params) {
   })
 }
 
+userService.getUserById = async function (id) {
+    return fetch({
+      url: `/users/${id}`,
+      method: 'get',
+    })
+}
+
+
 export default userService

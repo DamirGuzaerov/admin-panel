@@ -4,6 +4,7 @@ import { EyeOutlined, DeleteOutlined } from '@ant-design/icons';
 import utils from 'utils';
 import userService from "../../../../services/UserService";
 import AvatarStatus from 'components/shared-components/AvatarStatus';
+import {Link} from "react-router-dom";
 
 export class UserList extends Component {
 
@@ -57,7 +58,9 @@ export class UserList extends Component {
 				dataIndex: 'name',
 				render: (_, record) => (
 					<div className="d-flex">
-						<AvatarStatus src={record.img} name={record.name} subTitle={record.email}/>
+						<Link to={`setting/${record.id}`}  >
+							<AvatarStatus src={record.img} name={record.name} subTitle={record.email}/>
+						</Link>
 					</div>
 				),
 				sorter: {
