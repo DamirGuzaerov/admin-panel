@@ -1,12 +1,37 @@
 {
     "home": "主页",
-    
+
 	"sidenav.dashboard": "仪表板",
 	"sidenav.dashboard.default": "默认",
     "sidenav.dashboard.analytic": "分析页",
     "sidenav.dashboard.sales": "销售",
-    
-    "sidenav.apps": "应用",
+
+    "sidenav.general": "Основное",
+    "sidenav.general.dashboard": "Дашборд",
+    "sidenav.general.catalog": "Каталог",
+    "sidenav.general.catalog.products": "Товары",
+    "sidenav.general.catalog.category": "Категории",
+    "sidenav.general.catalog.collections": "Колекции",
+    "sidenav.general.catalog.combo": "Комбо",
+    "sidenav.general.orders": "Заказы",
+    "sidenav.general.clients": "Клиенты",
+    "sidenav.general.clients.list": "Список клиентов",
+    "sidenav.general.clients.group": "Группы клиентов",
+    "sidenav.general.banners": "Баннеры",
+    "sidenav.general.promo-codes": "Промокоды",
+    "sidenav.general.offline-points": "Оффлайн точки",
+    "sidenav.general.offline-points.addresses": "Адреса",
+    "sidenav.general.offline-points.geofences": "Геозоны",
+    "sidenav.general.employees": "Сотрудники",
+    "sidenav.general.mailing-lists": "Рассылки",
+
+    "sidenav.system": "Системные",
+    "sidenav.system.settings": "Настройки",
+    "sidenav.system.mobile-app": "Мобильное приложение",
+    "sidenav.system.logs": "Логи",
+
+
+  "sidenav.apps": "应用",
 	"sidenav.apps.mail": "邮件",
     "sidenav.apps.chat": "聊天室",
     "sidenav.apps.calendar": "日历",
@@ -88,7 +113,7 @@
     "sidenav.components.feedback.result": "结果",
     "sidenav.components.feedback.spin": "加载中",
     "sidenav.components.feedback.skeleton": "骨架屏",
-    
+
     "sidenav.components.other": "其他",
     "sidenav.components.other.anchor": "锚点",
     "sidenav.components.other.backtop": "回到顶部",
@@ -121,7 +146,7 @@
 	"sidenav.errors": "错误",
 	"sidenav.errors.error.1": "错误页 1",
 	"sidenav.errors.error.2": "错误页 2",
-    
+
     "sidenav.docs": "文件",
 	"sidenav.docs.documentation": "文献资料",
 	"sidenav.docs.changelog": "变更日志"

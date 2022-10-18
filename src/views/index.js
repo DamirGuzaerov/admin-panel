@@ -10,6 +10,7 @@ import { APP_PREFIX_PATH, AUTH_PREFIX_PATH } from 'configs/AppConfig'
 
 export const Views = (props) => {
   const { locale, location } = props;
+  console.log(locale)
   const currentAppLocale = AppLocale[locale];
   return (
     <IntlProvider

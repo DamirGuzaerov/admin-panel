@@ -6,6 +6,12 @@
         "lang": "En"
     },
     {
+        "langName": "Russia",
+        "langId": "ru",
+        "icon": "ru",
+        "lang": "Ru"
+    },
+    {
         "langName": "Chinese",
         "langId": "zh",
         "icon": "cn",

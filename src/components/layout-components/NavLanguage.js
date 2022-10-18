@@ -25,8 +25,10 @@ export const NavLanguage = ({ locale, configDisplay, onLocaleChange }) => {
 	const languageOption = (
 		<Menu>
 			{
-				lang.map((elm, i) => {return (
-					<Menu.Item 
+				lang.map((elm, i) => {
+					console.log(elm)
+					return (
+					<Menu.Item
 						key={i} 
 						className={locale === elm.langId? 'ant-dropdown-menu-item-active': ''} 
 						onClick={() => onLocaleChange(elm.langId)}
