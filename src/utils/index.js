@@ -211,6 +211,19 @@ class Utils {
 		}
 		return breakpoints
 	}
+
+	/**
+	 * Get Breakpoint
+	 * @param {String} a - Grid.useBreakpoint() from antd
+	 * @param {String} b - second string
+	 * @return {Number} '-1' - a > b, '1' b > a, '0' - a === b
+	 */
+
+	static compareStrings(a,b){
+		a = a.toLowerCase();
+		b = b.toLowerCase();
+		return a > b ? -1 : b > a ? 1 : 0;
+	}
 }
 
 export default Utils;

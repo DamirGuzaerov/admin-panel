@@ -53,9 +53,9 @@ const generalNavTree = [
                         submenu: []
                     },
                     {
-                        key: 'general-catalog-collection',
-                        path: `${APP_PREFIX_PATH}/general/catalog/collection`,
-                        title: 'sidenav.general.catalog.collection',
+                        key: 'general-catalog-collections',
+                        path: `${APP_PREFIX_PATH}/general/catalog/collections`,
+                        title: 'sidenav.general.catalog.collections',
                         icon: '',
                         breadcrumb: true,
                         submenu: []
@@ -82,17 +82,17 @@ const generalNavTree = [
                 path: `${APP_PREFIX_PATH}/general/clients`,
                 title: 'sidenav.general.clients',
                 icon: UserOutlined,
-                breadcrumb: true,
+                breadcrumb: false,
                 submenu: [{
                     key: 'general-clients-list',
-                    path: `${APP_PREFIX_PATH}/general/clients/list`,
+                    path: `${APP_PREFIX_PATH}/general/user-list`,
                     title: 'sidenav.general.clients.list',
                     icon: '',
                     breadcrumb: true,
                     submenu: []
                 }, {
                     key: 'general-clients-group',
-                    path: `${APP_PREFIX_PATH}/general/clients/group`,
+                    path: `${APP_PREFIX_PATH}/general/user-group`,
                     title: 'sidenav.general.clients.group',
                     icon: '',
                     breadcrumb: true,
