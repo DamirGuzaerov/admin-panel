@@ -4,6 +4,7 @@ import { EyeOutlined, DeleteOutlined } from '@ant-design/icons';
 import utils from 'utils';
 import userService from "../../../../services/UserService";
 import AvatarStatus from 'components/shared-components/AvatarStatus';
+import Loading from "../../../../components/shared-components/Loading";
 import {Link} from "react-router-dom";
 
 export class UserList extends Component {
@@ -50,7 +51,7 @@ export class UserList extends Component {
 	}
 
 	render() {
-		const { users, userProfileVisible, selectedUser } = this.state;
+		const {users} = this.state;
 
 		const tableColumns = [
 			{
@@ -108,12 +109,14 @@ export class UserList extends Component {
 				)
 			}
 		];
+		if(this.state.isUsersLoaded)
 		return (
 			this.state.isUsersLoaded &&
 			<Card bodyStyle={{'padding': '0px'}}>
 				<Table columns={tableColumns} dataSource={users} rowKey='id' />
 			</Card>
 		)
+		else return <Loading cover={"content"}/>
 	}
 }
 
