@@ -5,6 +5,7 @@ import {ROW_GUTTER} from 'constants/ThemeConstant';
 import Flex from 'components/shared-components/Flex'
 import UserService from "services/UserService";
 import Loading from "../../../../components/shared-components/Loading";
+import {Redirect} from "react-router-dom";
 
 export class EditProfile extends Component {
 
@@ -12,7 +13,8 @@ export class EditProfile extends Component {
 
     state = {
         user: {},
-        isUserLoaded: false
+        isUserLoaded: false,
+        redirect: false
     }
 
     componentDidMount() {
@@ -26,7 +28,6 @@ export class EditProfile extends Component {
                         isUserLoaded: true,
                     }
                 )
-                console.log(result)
             })
             .catch(error => {
                 console.error(error)
@@ -50,7 +51,9 @@ export class EditProfile extends Component {
                         ...values,
                     avatarUrl: avatarUrl},
                 })
-                message.success({content: 'Done!', key, duration: 2});
+            message.success({content: 'Done!', key})
+                .then(r => this.setState({redirect: true})
+            );
             }, 1000);
         };
 
@@ -87,6 +90,9 @@ export class EditProfile extends Component {
 
         const {name, email, username, phone, website, address, avatarUrl} = this.state.user;
 
+        if (this.state.redirect) {
+            return <Redirect to='/app/general/user-list'/>;
+        }
         if (this.state.isUserLoaded)
             return (
                 <><Flex alignItems="center" mobileFlex={false} className="text-center text-md-left">
