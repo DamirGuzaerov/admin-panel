@@ -5,7 +5,6 @@ import {ROW_GUTTER} from 'constants/ThemeConstant';
 import Flex from 'components/shared-components/Flex'
 import UserService from "services/UserService";
 import Loading from "../../../../components/shared-components/Loading";
-import redirect from "react-router-dom/es/Redirect";
 import {Redirect} from "react-router-dom";
 
 export class EditProfile extends Component {
