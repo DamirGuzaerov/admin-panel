@@ -5,11 +5,12 @@ import { MailOutlined, LockOutlined } from '@ant-design/icons';
 import PropTypes from 'prop-types';
 import { GoogleSVG, FacebookSVG } from 'assets/svg/icon';
 import CustomIcon from 'components/util-components/CustomIcon'
-import {  
-	showLoading, 
-	showAuthMessage, 
+import {
+	showLoading,
+	showAuthMessage,
 	hideAuthMessage,
-	authenticated
+	authenticated,
+	signIn
 } from 'redux/actions/Auth';
 import JwtAuthService from 'services/JwtAuthService'
 import { useHistory } from "react-router-dom";
@@ -28,8 +29,7 @@ export const LoginForm = (props) => {
 		loading,
 		showMessage,
 		message,
-		authenticated,
-		showAuthMessage,
+		signIn,
 		token,
 		redirect,
 		allowRedirect
@@ -37,12 +37,7 @@ export const LoginForm = (props) => {
 
 	const onLogin = values => {
 		showLoading()
-		const fakeToken = 'fakeToken'
-		JwtAuthService.login(values).then(resp => {
-			authenticated(fakeToken)
-		}).then(e => {
-			showAuthMessage(e)
-		})
+		signIn(values);
 	};
 
 	const onGoogleLogin = () => {
@@ -178,6 +173,7 @@ const mapStateToProps = ({auth}) => {
 }
 
 const mapDispatchToProps = {
+	signIn,
 	showAuthMessage,
 	showLoading,
 	hideAuthMessage,
