@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "name": "Стол на 2 человека",
+    "size": "default",
+    "img": "table2",
+    "rotation": 0,
+    "x": 0,
+    "y": 0
+  },
+  {
+    "id": 1,
+    "name": "Стол на 2 человека",
+    "size": "default",
+    "img": "table2",
+    "rotation": 0,
+    "x": 100,
+    "y": 100
+  }
+]
