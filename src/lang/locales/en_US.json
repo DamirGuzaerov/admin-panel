@@ -7,6 +7,7 @@
 	"sidenav.dashboard.sales": "Sales",
 
 	"sidenav.general": "General",
+	"sidenav.general.scheduler": "Scheduler",
 	"sidenav.general.dashboard": "Dashboard",
 	"sidenav.general.catalog": "Catalog",
 	"sidenav.general.catalog.products": "Products",
@@ -25,10 +26,10 @@
 	"sidenav.general.employees": "Employees",
 	"sidenav.general.mailing-lists": "Mailing Lists",
 
-	"sidenav.system": "Системные",
-	"sidenav.system.settings": "Настройки",
-	"sidenav.system.mobile-app": "Мобильное приложение",
-	"sidenav.system.logs": "Логи",
+	"sidenav.system": "System",
+	"sidenav.system.settings": "Settings",
+	"sidenav.system.mobile-app": "Mobile app",
+	"sidenav.system.logs": "Logs",
 
 
 	"sidenav.apps": "Apps",

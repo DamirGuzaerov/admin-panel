@@ -1,24 +1,15 @@
 .puzzle {
   border: 1px solid @border-color-base ;
-  img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  &-img{
+    object-fit: scale-down;
+    max-width: 100%;
   }
-  &-small{
-    width: 50px;
-    height: 50px;
-  }
-  &-default{
-    width: 50px;
-    height: 100px;
-  }
-  &-medium{
+  &-container{
     width: 100px;
     height: 100px;
-  }
-  &-large{
-    width: 200px;
-    height: 200px;
+    object-fit: cover;
   }
 }

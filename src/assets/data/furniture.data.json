@@ -1,29 +1,32 @@
 [
   {
+    "id": 0,
     "name": "Стол на 2 человека",
-    "size": "default",
     "img": "table2"
   },
   {
+    "id": 1,
     "name": "Стол на 4 человека",
-    "size": "medium",
     "img": "table4"
   },
   {
+    "id": 2,
     "name": "Стол на 6 человек",
-    "size": "large",
     "img": "table6"
   },
   {
-  "name": "Диван угловой",
-    "size": "large"
-  },
-  {
+    "id": 3,
     "name": "Диван",
-    "size": "medium"
+    "img": "couch"
   },
   {
+    "id": 4,
     "name": "Куст",
-    "size": "small"
+    "img": "bush"
+  },
+  {
+    "id": 5,
+    "name": "Стена",
+    "img": "wall"
   }
 ]
