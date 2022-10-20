@@ -10,6 +10,7 @@ import {
     ShopOutlined,
     UserOutlined,
     UsergroupAddOutlined,
+    BuildOutlined
 } from '@ant-design/icons';
 import {APP_PREFIX_PATH} from 'configs/AppConfig'
 
@@ -22,9 +23,17 @@ const generalNavTree = [
         submenu: [
             {
                 key: 'general-dashboard',
-                path: `${APP_PREFIX_PATH}/docs/documentation`,
+                path: `${APP_PREFIX_PATH}/general/dashboard`,
                 title: 'sidenav.general.dashboard',
                 icon: DashboardOutlined,
+                breadcrumb: true,
+                submenu: []
+            },
+            {
+                key: 'general-scheduler',
+                path: `${APP_PREFIX_PATH}/general/scheduler`,
+                title: 'sidenav.general.scheduler',
+                icon: BuildOutlined,
                 breadcrumb: true,
                 submenu: []
             },
