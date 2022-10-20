@@ -7,6 +7,7 @@ const Pages = ({ match }) => (
     <Switch>
       <Redirect exact from={`${match.url}`} to={`${match.url}/profile`} />
       <Route path={`${match.url}/user-list`} component={lazy(() => import(`./user-list`))} />
+        <Route path={`${match.url}/scheduler`} component={lazy(() => import(`./scheduler`))} />
       <Route path={`${match.url}/setting/:userId`} component={lazy(() => import(`./setting`))} />
     </Switch>
   </Suspense>
