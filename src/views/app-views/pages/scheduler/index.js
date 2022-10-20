@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import furnitureSelected from "assets/data/furniture-selected.data.json";
 import furniture from "assets/data/furniture.data.json";
-import {Button, Card} from "antd";
+import {Card} from "antd";
 import Flex from "components/shared-components/Flex";
 import Puzzle from "../../components/puzzle";
 import { v4 as uuidv4 } from 'uuid';
@@ -53,7 +53,6 @@ const Scheduler = () => {
                             )}
                         </Flex>
                     </Card>
-                    <Button size={"large"} type={"primary"} className={"mt-2"} onClick={()=>saveChanges()}>Сохранить</Button>
                 </div>
             </div>
             <div className={"ant-col-12"}>
